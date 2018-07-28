@@ -1,0 +1,61 @@
+.Menu {
+  grid-row: 2/3;
+  background-color: #212121;
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
+}
+.Menu-upper {
+  place-self: center;
+}
+.Menu-wrapper {
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: auto;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+.Menu-block {
+  grid-row: 1;
+  display: grid;
+  grid-template-rows: auto 2px;
+}
+
+.Menu-block-upper {
+  /* height: 100%; */
+  grid-row: 1;
+  padding: 1rem;
+  text-align: left;
+  font-weight: bold;
+  color: black;
+}
+.Menu-block-lower {
+  grid-row: 2;
+}
+button.change {
+  width: 200px;
+  grid-column: 1;
+  place-self: center;
+  grid-row: 3;
+
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.2rem;
+
+  webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+
+  border: 2px solid #494949;
+}
+button.change:hover {
+  background-color: #494949;
+}
+button.change:focus {
+  outline: 0;
+}

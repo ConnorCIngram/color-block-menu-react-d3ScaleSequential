@@ -1,28 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .App {
   text-align: center;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1.5fr 1fr;
+  height: 100vh;
+  width: 100vw;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  font-family: "Open Sans", sans-serif;
   color: white;
 }
-
-.App-title {
-  font-size: 1.5em;
+.App-upper,
+.App-lower {
+  color: #4c3549;
+  place-self: center;
 }
-
-.App-intro {
-  font-size: large;
+.App-upper-sub {
+  font-size: 1rem;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-lower {
+  align-self: end;
+  justify-self: left;
+  margin-bottom: 0;
 }

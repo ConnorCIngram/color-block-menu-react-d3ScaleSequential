@@ -1,18 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Menu from "./components/Menu/Menu";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1 className="App-upper">
+          Colored Block Menu Using{" "}
+          <a href="https://github.com/d3/d3-scale-chromatic">
+            d3-scale-chromatic
+          </a>
+          <p className="App-upper-sub">Not Currently Mobile Friendly</p>
+        </h1>
+        <Menu />
+        <h5 className="App-lower">2018 Connor Ingram</h5>
       </div>
     );
   }
